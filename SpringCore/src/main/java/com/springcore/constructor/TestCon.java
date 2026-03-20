@@ -1,0 +1,15 @@
+package com.springcore.constructor;
+import org.springframework.context.*;
+import org.springframework.context.support.*;
+
+import com.springcore.ref.A;
+public class TestCon {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/constructor/conconfig.xml");
+		Person p=(Person)context.getBean("p1");
+		
+		System.out.println(p);
+
+	}
+}

@@ -1,0 +1,16 @@
+package com.springcore.constructor;
+
+public class Person {
+	private String name;
+	private int pid;
+	private Certi cer;
+	public Person(String name,int pid,Certi cer) {
+		this.name=name;
+		this.pid=pid;
+		this.cer=cer;
+	}
+	
+	public String toString() {
+		return this.name+" : "+this.pid;
+	}
+}
