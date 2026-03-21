@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 /*@Component*/
 @Component("Shiv")
-@Scope("prototype") /* diff hashcode same object */
+@Scope("prototype")
 public class Student {
 	@Value("Shivtej Pawar")
 	private String  sname;

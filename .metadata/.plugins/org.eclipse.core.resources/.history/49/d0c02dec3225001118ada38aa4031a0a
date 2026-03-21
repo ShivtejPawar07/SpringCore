@@ -3,12 +3,10 @@ package com.springcore.stereotype;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /*@Component*/
 @Component("Shiv")
-@Scope("prototype") /* diff hashcode same object */
 public class Student {
 	@Value("Shivtej Pawar")
 	private String  sname;

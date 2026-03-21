@@ -11,14 +11,10 @@ public class Test {
 		
 		/* Student student=con.getBean("student",Student.class); */
 		 Student student=con.getBean("Shiv",Student.class); 
-			/*
-			 * System.out.println(student); System.out.println(student.getAddress());
-			 * System.out.println(student.getAddress().getClass().getName());
-			 */
-		 Student student2=con.getBean("Shiv",Student.class); 
-		 
-		 System.out.println(student.hashCode());
-		 System.out.println(student2.hashCode());
+		System.out.println(student);
+		System.out.println(student.getAddress());
+		System.out.println(student.getAddress().getClass().getName());
+		
 	}
 
 }
