@@ -1,0 +1,16 @@
+package com.springcore.lifecycle;
+
+import org.springframework.context.support.*;
+import org.springframework.context.*;
+public class LifeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AbstractApplicationContext	context=new ClassPathXmlApplicationContext("com/springcore./lifecycle/lifeconfig.xml");
+					Smosa s1=(Smosa)context.getBean("s1");
+					System.out.println(s1);
+					
+			   
+	}
+
+}

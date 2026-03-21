@@ -1,0 +1,14 @@
+package com.springcore.auto.wire;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.*;
+public class TestAutoWire {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			ApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/auto/wire/autoConfig.xml");
+			Emp e1=context.getBean("e1",Emp.class);
+			System.out.println(e1);
+	}
+
+}

@@ -25,6 +25,12 @@
           		<constructor-arg value="Shivtej"/>
           		<constructor-arg value="7" type="int"/>
           		<constructor-arg ref="cer"/>
+          		<constructor-arg>
+          			<list>
+          				<value>"qwe"</value>
+          				<value>"asd"</value>
+          			</list>
+          		</constructor-arg>
           </bean>
 
 </beans>
