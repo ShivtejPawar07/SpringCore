@@ -1,0 +1,30 @@
+package com.spring.jdbc;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.jdbc.dao.StudentDao;
+
+public class App {
+	public static void main(String[] args) {
+
+		ApplicationContext con =
+				new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
+
+		StudentDao dao = con.getBean("studentDao", StudentDao.class);
+
+		// INSERT
+		Student s1 = new Student(101, "Tej", "Pune");
+		int result = dao.insert(s1);
+		System.out.println("Inserted: " + result);
+
+		// UPDATE
+		Student s2 = new Student(101, "Shivtej", "Mumbai");
+		int res2 = dao.update(s2);
+		System.out.println("Updated: " + res2);
+
+		// DELETE
+		int res3 = dao.delete(101);
+		System.out.println("Deleted: " + res3);
+	}
+}

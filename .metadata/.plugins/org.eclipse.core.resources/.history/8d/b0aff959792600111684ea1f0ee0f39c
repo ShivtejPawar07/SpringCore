@@ -1,0 +1,8 @@
+package com.spring.jdbc.dao;
+
+public interface StudentDao {
+	int insert(Student student);
+	int update(Student student);
+	int delete(int id);
+	
+}
