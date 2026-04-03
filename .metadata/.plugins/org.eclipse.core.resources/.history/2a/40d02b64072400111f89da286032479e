@@ -1,7 +1,0 @@
-package com.springcore;
-
-public class Student {
-	private int sid;
-	private String sname;
-	private String saddr;
-}
