@@ -26,23 +26,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.spring.mvc"/>
-			<item value="com.spring.orm"/>
-			<item value="com.spring.jdbc"/>
-			<item value="com.springcore"/>
 		</list>
 		<list key="groupId">
-			<item value="com.spring.mvc"/>
-			<item value="com.spring.orm"/>
-			<item value="com.spring.jdbc"/>
-			<item value="com.springcore"/>
 		</list>
 		<list key="artifactId">
-			<item value="SpringMVC"/>
-			<item value="SpringORM"/>
-			<item value="springorm"/>
-			<item value="springjdbc"/>
-			<item value="SpringCore"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -58,10 +45,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="org.techhub"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="CoreApp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
